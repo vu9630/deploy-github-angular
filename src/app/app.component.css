@@ -1,0 +1,43 @@
+h1{
+  text-align: center;
+}
+.example-form-field{
+  width: 100%;
+}
+.container{
+  padding: 0 10% 0 10%;
+}
+
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.flex>*{
+  width: 25%;
+  padding-right: 10px;
+  margin:0 10px 10px 0;
+}
+mat-card-title{
+  height: 50px;
+  overflow: hidden;
+}
+mat-card-content{
+  height: 100px;
+  overflow: hidden;
+}
+mat-spinner{
+  display:flex;
+  justify-content: center;
+}
+.icon-setting{
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+.icon-item{
+  cursor: pointer;
+  font-size: 40px;
+}
+

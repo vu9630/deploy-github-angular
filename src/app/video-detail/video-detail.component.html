@@ -1,0 +1,12 @@
+<iframe width="420" height="315"
+[src]="url">
+</iframe>
+<div>
+  <h2>{{details.snippet.title}}</h2>
+  <h3><mat-icon>visibility</mat-icon>{{details.statistics.viewCount| number}} </h3>
+  <p><mat-icon>thumb_up</mat-icon>{{details.statistics.likeCount| number}} ---<mat-icon>thumb_down</mat-icon> {{details.statistics.dislikeCount| number}} --- <mat-icon>comment_bank</mat-icon>{{details.statistics.commentCount| number}}</p>
+  <pre>{{details.snippet.description}}</pre>
+
+  <p>{{details.snippet.channelTitle}}</p>
+  <p>{{details.snippet.tags.join(',')}}</p>
+</div>

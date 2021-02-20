@@ -1,0 +1,27 @@
+<form [formGroup]="form"  (submit)="onSubmit()">
+<mat-form-field>
+  <mat-label>Number per page</mat-label>
+<mat-select formControlName="numberPerPage" >
+  <mat-option value="5">5</mat-option>
+  <mat-option value="10">10</mat-option>
+  <mat-option value="15">15</mat-option>
+</mat-select>
+
+</mat-form-field>
+<mat-form-field >
+  <mat-label>Search Debounce</mat-label>
+<mat-select [compareWith]="compareValue" formControlName="searchDebounce" >
+  <mat-option value="500" >500</mat-option>
+  <mat-option value="1000">1000</mat-option>
+  <mat-option value="1500">1500</mat-option>
+  <mat-option value="2000">2000</mat-option>
+</mat-select>
+
+</mat-form-field>
+<mat-form-field >
+  <mat-label>API Key</mat-label>
+  <input formControlName="apiToken" matInput>
+</mat-form-field>
+<button  mat-raised-button color="primary">OK</button>
+<button mat-raised-button color="warn">Cancel</button>
+</form>
